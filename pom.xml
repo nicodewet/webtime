@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.makaro</groupId>
+    <artifactId>webtime</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <docker.image.prefix>makaro</docker.image.prefix>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.makaro</groupId>
+                <artifactId>dotnet-maven-plugin</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>dotnet</id>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
