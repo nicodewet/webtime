@@ -8,5 +8,7 @@ dotnet restore
 # set of files to a directory
 dotnet publish
 
-ls bin/Debug/netcoreapp1.0/publish
-cd bin/Debug/netcoreapp1.0/publish && docker build -t nicodewet/timeapp .
+# Docker build section
+cp Dockerfile bin/Debug/netcoreapp1.0/publish
+cd bin/Debug/netcoreapp1.0/publish
+docker build -t nicodewet/timeapp .
