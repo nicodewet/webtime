@@ -7,4 +7,6 @@ dotnet restore
 # dotnet publish compiles the application, reads through its dependencies specified in the project.json file and publishes the resulting
 # set of files to a directory
 dotnet publish
+
+ls bin/Debug/netcoreapp1.0/publish
 cd bin/Debug/netcoreapp1.0/publish && docker build -t nicodewet/timeapp .
