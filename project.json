@@ -30,7 +30,8 @@
 
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "outputName": "WebTime"
   },
 
   "runtimeOptions": {
