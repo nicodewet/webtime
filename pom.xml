@@ -23,8 +23,8 @@
                     <execution>
                         <id>dotnet</id>
                         <goals>
-                            <goal>build</goal>
-                            <goal>test</goal>
+                            <goal>restore</goal>
+                            <goal>publish</goal>
                         </goals>
                     </execution>
                 </executions>
