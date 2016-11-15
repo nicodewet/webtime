@@ -33,6 +33,10 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
+                <configuration>
+                    <dockerDirectory>bin/Debug/netcoreapp1.0/publish</dockerDirectory>
+                    <imageName>nicodewet/timeapp:${project.version}</imageName>
+                </configuration>
                 <executions>
                     <execution>
                         <id>build-image</id>
