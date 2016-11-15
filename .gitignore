@@ -10,7 +10,7 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-# Build results
+## Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -21,6 +21,8 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+# Maven target folder
+target/
 
 # Visual Studio 2015 cache/options directory
 .vs/

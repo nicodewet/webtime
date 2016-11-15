@@ -8,10 +8,33 @@
     <artifactId>webtime</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <url>https://github.com/nicodewet/webtime</url>
+
+    <scm>
+        <url>https://github.com/nicodewet/webtime</url>
+        <connection>scm:git:git://github.com/nicodewet/webtime.git</connection>
+        <developerConnection>scm:git:git@github.com:nicodewet/webtime.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <email>nico@nicodewet.com</email>
+            <name>Nico de Wet</name>
+            <url>https://github.com/nicodewet</url>
+            <id>nicodewet</id>
+        </developer>
+    </developers>
 
     <properties>
         <docker.hub.account>nicodewet</docker.hub.account>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>makaro.repo</id>
+            <url>http://repo.makaro.io/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <build>
         <plugins>
