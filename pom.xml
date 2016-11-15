@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <docker.image.prefix>makaro</docker.image.prefix>
+        <docker.hub.account>nicodewet</docker.hub.account>
     </properties>
 
     <build>
@@ -42,7 +42,7 @@
                 <version>0.4.13</version>
                 <configuration>
                     <dockerDirectory>bin/Debug/netcoreapp1.0/publish</dockerDirectory>
-                    <imageName>nicodewet/timeapp:${project.version}</imageName>
+                    <imageName>timeapp:${project.version}</imageName>
                 </configuration>
                 <executions>
                     <execution>
@@ -60,7 +60,7 @@
                         </goals>
                         <configuration>
                             <image>timeapp:${project.version}</image>
-                            <newName>nicodewet/timeapp:${project.version}</newName>
+                            <newName>${docker.hub.account}/timeapp:${project.version}</newName>
                         </configuration>
                     </execution>
                     <execution>
@@ -70,7 +70,7 @@
                             <goal>push</goal>
                         </goals>
                         <configuration>
-                            <imageName>nicodewet/timeapp:${project.version}</imageName>
+                            <imageName>${docker.hub.account}/timeapp:${project.version}</imageName>
                         </configuration>
                     </execution>        
                 </executions>
