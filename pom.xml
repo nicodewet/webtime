@@ -21,9 +21,16 @@
                 <version>0.0.1-SNAPSHOT</version>
                 <executions>
                     <execution>
-                        <id>dotnet</id>
+                        <id>dotnet-restore</id>
+                        <phase>validate</phase>
                         <goals>
                             <goal>restore</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>dotnet-publish</id>
+                        <phase>compile</phase>
+                        <goals>
                             <goal>publish</goal>
                         </goals>
                     </execution>
