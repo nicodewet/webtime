@@ -36,11 +36,11 @@
             <id>makaro.repo</id>
             <url>http://repo.makaro.io/repository/maven-snapshots/</url>
         </snapshotRepository>
+        <site>
+            <id>makaro.repo</id>
+            <url>dav:http://repo.makaro.io/repository/site/${project.groupId}-${project.artifactId}-${project.version}</url>
+        </site>
     </distributionManagement>
-    <site>
-      <id>makaro.repo</id>
-      <url>dav:http://repo.makaro.io/repository/site/${project.groupId}-${project.artifactId}-${project.version}</url>
-    </site>
     <!-- Environment Settings: END -->
 
     <organization>
