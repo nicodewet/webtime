@@ -101,6 +101,11 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
+                    <!--
+                    To push to a private Docker image registry that requires authentication, you can put your credentials in your Maven's 
+                    global settings.xml file as part of the <servers></servers> block. 
+                    -->
+                    <serverId>docker-hub</serverId>
                     <dockerDirectory>bin/Debug/netcoreapp1.0/publish</dockerDirectory>
                     <imageName>timeapp:${project.version}</imageName>
                 </configuration>
