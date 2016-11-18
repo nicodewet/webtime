@@ -16,5 +16,8 @@ node {
     stage 'Maven site generate and deploy'
         git url: "https://github.com/nicodewet/webtime.git"
         sh 'mvn site:site site:deploy'
+    
+    stage 'Maven local docker image build and tag'
+        sh 'mvn package'
         
 }
