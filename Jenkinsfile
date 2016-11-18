@@ -8,14 +8,18 @@ node {
     */
     def mvnHome = tool 'M3'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
+
+    /**
+    * The DOCKER_HOST environment variable is required by the docker-maven-plugin
+    */
     env.DOCKER_HOST = "tcp://127.0.0.1:2375"
     
+    git url: "https://github.com/nicodewet/webtime.git"
+
     stage 'Maven compile (dotnet restore and publish)'
-        git url: "https://github.com/nicodewet/webtime.git"
         sh 'mvn compile'
     
     stage 'Maven site generate and deploy'
-        git url: "https://github.com/nicodewet/webtime.git"
         sh 'mvn site:site site:deploy'
     
     stage 'Maven local docker image build and tag'
