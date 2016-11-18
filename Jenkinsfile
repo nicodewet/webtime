@@ -31,6 +31,6 @@ node {
     stage ('Maven docker hub image push') {
         sh 'whoami'
         sh 'docker info'
-        sh 'mvn deploy'
+        // sh 'mvn deploy'
     }
 }
