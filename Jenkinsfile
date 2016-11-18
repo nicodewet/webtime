@@ -16,13 +16,15 @@ node {
     
     git url: "https://github.com/nicodewet/webtime.git"
 
-    stage 'Maven compile (dotnet restore and publish)'
+    stage 'Maven compile (dotnet restore and publish)' {
         sh 'mvn compile'
+    }
     
-    stage 'Maven site generate and deploy'
+    stage 'Maven site generate and deploy' {
         sh 'mvn site:site site:deploy'
+    }
     
-    stage 'Maven local docker image build and tag'
+    stage 'Maven local docker image build and tag' {
         sh 'mvn package'
-        
+    }
 }
