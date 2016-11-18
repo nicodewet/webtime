@@ -8,6 +8,7 @@ node {
     */
     def mvnHome = tool 'M3'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
+    env.DOCKER_HOST = "tcp://127.0.0.1:2375"
     
     stage 'Maven compile (dotnet restore and publish)'
         git url: "https://github.com/nicodewet/webtime.git"
