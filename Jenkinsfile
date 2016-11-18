@@ -19,10 +19,16 @@ node {
     stage ('Maven compile (dotnet restore and publish)') {
         sh 'mvn compile'
     }
+
     stage ('Maven site generate and deploy') {
         sh 'mvn site:site site:deploy'
     }
+
     stage ('Maven local docker image build and tag') {
         sh 'mvn package'
+    }
+
+    stage ('Maven docker hub image push') {
+        sh 'mvn deploy'
     }
 }
