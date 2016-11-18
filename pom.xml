@@ -61,6 +61,13 @@
         <docker.hub.account>nicodewet</docker.hub.account>
     </properties>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Makaro Maven Repo</id>
+            <url>http://repo.makaro.io/repository/maven-releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <plugins>
             <plugin>
