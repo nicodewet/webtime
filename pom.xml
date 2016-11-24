@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     
     <name>.NET Core Web Time App</name>
-    <description>A simple .NET Core static web site that displays the time.</description>
+    <description>A simple .NET Core static web site that displays the time. Business focus.</description>
     <url>https://github.com/nicodewet/webtime</url>
 
     <!-- Environment Settings: START -->
