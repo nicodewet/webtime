@@ -21,7 +21,7 @@
     </scm>
     <ciManagement>
         <system>jenkins</system>
-        <url>http://ci.makaro.io</url>
+        <url>https://ci.makaro.io</url>
     </ciManagement>
     <issueManagement>
         <system>github</system>
@@ -30,15 +30,15 @@
     <distributionManagement>
         <repository>
             <id>makaro.repo</id>
-            <url>http://repo.makaro.io/repository/maven-releases/</url>
+            <url>https://repo.makaro.io/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>makaro.repo</id>
-            <url>http://repo.makaro.io/repository/maven-snapshots/</url>
+            <url>https://repo.makaro.io/repository/maven-snapshots/</url>
         </snapshotRepository>
         <site>
             <id>makaro.repo</id>
-            <url>dav:http://repo.makaro.io/repository/site/${project.groupId}-${project.artifactId}-${project.version}</url>
+            <url>dav:https://repo.makaro.io/repository/site/${project.groupId}-${project.artifactId}-${project.version}</url>
         </site>
     </distributionManagement>
     <!-- Environment Settings: END -->
@@ -64,7 +64,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>Makaro Maven Repo</id>
-            <url>http://repo.makaro.io/repository/maven-releases</url>
+            <url>https://repo.makaro.io/repository/maven-releases</url>
         </pluginRepository>
     </pluginRepositories>
 
