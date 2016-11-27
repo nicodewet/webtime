@@ -17,21 +17,21 @@ This page serves as background information for new members (developers with comm
 [Building Docker Images for .NET Core Applications](https://docs.microsoft.com/en-us/dotnet/articles/core/docker/building-net-docker-images)
 [Microsoft .NET Docker Hub](https://hub.docker.com/r/microsoft/dotnet/)
 
-Nicos-Air:MyFirstApp nico$ docker build -t nicodewet/timeapp .
-Nicos-Air:MyFirstApp nico$ docker run -p 5000:5000 nicodewet/timeapp
+    Nicos-Air:MyFirstApp nico$ docker build -t nicodewet/timeapp .
+    Nicos-Air:MyFirstApp nico$ docker run -p 5000:5000 nicodewet/timeapp
 
 ### Docker Engine: Production
 
-Nicos-Air:WebTime nico$ dotnet publish
-Nicos-Air:WebTime nico$ sudo npm install -g yo generator-aspnet generator-docker
-Nicos-Air:WebTime nico$ yo docker
-Nicos-Air:WebTime nico$ ./dockerTask.sh build release
-Nicos-Air:WebTime nico$ docker run -p 5000:5000 nicodewet/timeapp
+    Nicos-Air:WebTime nico$ dotnet publish
+    Nicos-Air:WebTime nico$ sudo npm install -g yo generator-aspnet generator-docker
+    Nicos-Air:WebTime nico$ yo docker
+    Nicos-Air:WebTime nico$ ./dockerTask.sh build release
+    Nicos-Air:WebTime nico$ docker run -p 5000:5000 nicodewet/timeapp
 
 ### Docker Hub: Publish
 
-Nicos-Air:WebTime nico$ docker login
-Nicos-Air:WebTime nico$ docker push nicodewet/timeapp
+    Nicos-Air:WebTime nico$ docker login
+    Nicos-Air:WebTime nico$ docker push nicodewet/timeapp
 
 ## Bower
 
