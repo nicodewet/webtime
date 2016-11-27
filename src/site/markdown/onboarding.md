@@ -1,3 +1,7 @@
+# Onboarding
+
+This page serves as background information for new members (developers with commit privileges who will directly contribute to the project in one way or another).
+
 ## Guide 
 
 [Your First ASP.NET Core Application on a Mac Using Visual Studio Code](https://docs.asp.net/en/latest/tutorials/your-first-mac-aspnet.html)

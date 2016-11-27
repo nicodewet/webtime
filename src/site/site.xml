@@ -1,5 +1,8 @@
 <project>
     <body>
         <menu ref="reports" />
+        <menu name="Background">
+            <item name="Onboarding" href="onboarding.html" />
+        </menu>
     </body>
 </project>
