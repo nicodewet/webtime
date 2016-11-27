@@ -35,6 +35,7 @@ node {
     stage ('Show n tell docker deploy') {
         sh '''
         ls
+        whoami
         '''
     }
 }
