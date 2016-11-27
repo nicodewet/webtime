@@ -32,12 +32,13 @@ node {
         sh 'mvn deploy'
     }
 
-    stage ('Remote pull and run') {
+    stage ('time.makaro.io pull and run') {
         sh 'chmod u+x snt-docker-deploy.sh'
         sh './snt-docker-deploy.sh'
     }
 
-    stage ('Post deploy smoke tests') {
-
+    stage ('time.makaro.io smoke test(s)') {
+        sh 'chmod u+x smoke-test.sh'
+        sh './smoke-test.sh'
     }
 }
