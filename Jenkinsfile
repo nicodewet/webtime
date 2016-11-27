@@ -32,9 +32,8 @@ node {
     //     sh 'mvn deploy'
     // }
 
-    checkout scm
-    stage "Build Pex"
-    dir ('your new directory') {
-        sh('snt-docker-deploy.sh')
+    stage ('Remote pull and run') {
+        checkout scm
+         sh 'ls -al'
     }
 }
