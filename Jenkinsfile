@@ -16,26 +16,28 @@ node {
     
     git url: "https://github.com/nicodewet/webtime.git"
 
-    // stage ('Maven compile (dotnet restore and publish)') {
-    //     sh 'mvn compile'
-    // }
+    stage ('Maven compile (dotnet restore and publish)') {
+        sh 'mvn compile'
+    }
 
-    // stage ('Maven site generate and deploy') {
-    //     sh 'mvn site:site site:deploy'
-    // }
+    stage ('Maven site generate and deploy') {
+        sh 'mvn site:site site:deploy'
+    }
 
-    // stage ('Maven local docker image build and tag') {
-    //     sh 'mvn package'
-    // }
+    stage ('Maven local docker image build and tag') {
+        sh 'mvn package'
+    }
 
-    // stage ('Maven docker hub image push') {
-    //     sh 'mvn deploy'
-    // }
+    stage ('Maven docker hub image push') {
+        sh 'mvn deploy'
+    }
 
     stage ('Remote pull and run') {
-        checkout scm
-        sh 'ls -al'
         sh 'chmod u+x snt-docker-deploy.sh'
         sh './snt-docker-deploy.sh'
+    }
+
+    stage ('Post deploy smoke tests') {
+
     }
 }
