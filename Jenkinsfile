@@ -34,6 +34,6 @@ node {
 
     stage ('Remote pull and run') {
         checkout scm
-         sh 'ls -al'
+        sh 'ls -al'
     }
 }
