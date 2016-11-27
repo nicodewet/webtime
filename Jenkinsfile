@@ -32,7 +32,8 @@ node {
     //     sh 'mvn deploy'
     // }
 
-    stage ('Show n tell docker deploy') {
-        sh 'snt-docker-deploy.sh'
+    stage "Build Pex"
+    dir ('your new directory') {
+        sh('snt-docker-deploy.sh')
     }
 }
