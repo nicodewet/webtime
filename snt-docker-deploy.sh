@@ -3,7 +3,7 @@ ssh -i /var/lib/jenkins/.ssh/deploy-user.time.makaro.io deploy-user@time.makaro.
 echo "*** CHECK RUNNING CONTAINERS ***"
 docker ps
 echo "*** STOP RUNNING CONTAINER ***"
-docker stop sick_leakey && docker rm -v sick_leakey
+docker stop timeapp && docker rm -v timeapp
 echo "*** CHECK RUNNING CONTAINERS ***"
 docker ps
 echo "*** PULL LATEST IMAGE ***"
