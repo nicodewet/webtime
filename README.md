@@ -1,4 +1,6 @@
-# Nico's Notes
+# WebTime
+
+An ASP.NET Core web application.
 
 ## Guide 
 
