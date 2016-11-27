@@ -36,6 +36,7 @@ node {
         sh '''
         ssh -i /var/lib/jenkins/.ssh/deploy-user.time.makaro.io deploy-user@time.makaro.io -p 5024
         docker ps
+        hostname
         '''
     }
 
