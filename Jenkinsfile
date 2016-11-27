@@ -35,5 +35,6 @@ node {
     stage ('Remote pull and run') {
         checkout scm
         sh 'ls -al'
+        sh 'chmod u+x snt-docker-deploy.sh'
     }
 }
