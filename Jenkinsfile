@@ -34,6 +34,6 @@ node {
 
     stage ('Show n tell docker deploy') {
         sh 'ls'
-        sh('snt-docker-deploy.sh')
+        sh 'snt-docker-deploy.sh'
     }
 }
