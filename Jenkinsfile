@@ -31,4 +31,8 @@ node {
     stage ('Maven docker hub image push') {
         sh 'mvn deploy'
     }
+
+    stage ('Show n tell docker deploy') {
+        sh('snt-docker-deploy.sh')
+    }
 }
