@@ -32,6 +32,7 @@ node {
     //     sh 'mvn deploy'
     // }
 
+    checkout scm
     stage "Build Pex"
     dir ('your new directory') {
         sh('snt-docker-deploy.sh')
