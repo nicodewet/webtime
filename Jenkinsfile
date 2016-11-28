@@ -2,6 +2,9 @@
 
 node {
 
+    // Recursively delete the current directory from the workspace
+    deleteDir()
+
     /**
     * The below assumes that you have named your Maven installation as M3 in Jenkins.
     * See: Jenkins >> Manage Jenkins >> Global Tool Configuration
@@ -17,8 +20,6 @@ node {
     git url: "https://github.com/nicodewet/webtime.git"
 
     stage ('Maven compile (dotnet restore and publish)') {
-        // Recursively delete the current directory from the workspace
-        deleteDir()
         // Microsoft .NET Core Shared Framework Host assertion
         sh 'dotnet | grep "Version  : 1.1.0"'
         // The above assertion should be build into the below, but it's not at present.
