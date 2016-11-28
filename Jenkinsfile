@@ -17,6 +17,7 @@ node {
     git url: "https://github.com/nicodewet/webtime.git"
 
     stage ('Maven compile (dotnet restore and publish)') {
+        sh dotnet | grep "Version  : 1.1.0"
         sh 'mvn compile'
     }
 
