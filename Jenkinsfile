@@ -28,7 +28,7 @@ node {
     }
 
     stage ('Maven local docker image build and tag') {
-        sh 'mvn package'
+        sh 'mvn clean package'
     }
 
     stage ('Maven docker hub image push') {
