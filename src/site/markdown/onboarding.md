@@ -2,6 +2,15 @@
 
 This page serves as background information for new members (developers with commit privileges who will directly contribute to the project in one way or another).
 
+## Principles and Practices
+
+* The entire pipeline, from developer machine to production uses *nix operating systems.
+* Proprietary tool lockin must be avoided.
+* Anything that can be version controlled will be version controlled with no exceptions.
+* Anything that can be released to a repository with semantic versioning will be with no exceptions. This includes documentation and models.
+* Success is always measured in terms of the value to the consumer with no exceptions. This means that publishing documentation and systems in a way that can't be readily consumed by a consumer is not acceptable.
+* As an improvement kata, the delivery pipeline will always evolve and be enhanced over time.
+
 ## Guide 
 
 [Your First ASP.NET Core Application on a Mac Using Visual Studio Code](https://docs.asp.net/en/latest/tutorials/your-first-mac-aspnet.html)
