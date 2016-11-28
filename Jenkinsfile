@@ -31,7 +31,7 @@ node {
     }
 
     stage ('Maven local docker image build and tag') {
-        sh 'rm -rf bin'
+        sh 'ls bin && rm -rf bin'
         sh 'mvn clean package'
     }
 
