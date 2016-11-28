@@ -1,7 +1,10 @@
 #!/usr/bin/env groovy
 
 node {
-    
+
+    // Recursively delete the current directory from the workspace
+    deleteDir()
+
     /**
     * The below assumes that you have named your Maven installation as M3 in Jenkins.
     * See: Jenkins >> Manage Jenkins >> Global Tool Configuration

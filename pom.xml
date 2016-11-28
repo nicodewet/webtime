@@ -106,7 +106,7 @@
                     global settings.xml file as part of the <servers></servers> block. 
                     -->
                     <serverId>docker-hub</serverId>
-                    <dockerDirectory>bin/Debug/netcoreapp1.0/publish</dockerDirectory>
+                    <dockerDirectory>bin/Debug/netcoreapp1.1/publish</dockerDirectory>
                     <imageName>timeapp:${project.version}</imageName>
                 </configuration>
                 <executions>
