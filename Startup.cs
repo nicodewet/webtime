@@ -12,6 +12,7 @@ namespace NicoDeWet.WebTime
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddResponseCompression();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -30,6 +31,13 @@ namespace NicoDeWet.WebTime
             app.UseResponseCompression();
 
             loggerFactory.AddConsole();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                name: "default",
+                template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
