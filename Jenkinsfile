@@ -44,6 +44,8 @@ node {
     }
 
     stage ('time.makaro.io smoke test(s)') {
+        // give the web application max 5s to start up
+        sleep 5
         sh 'chmod u+x smoke-test.sh'
         sh './smoke-test.sh'
     }
