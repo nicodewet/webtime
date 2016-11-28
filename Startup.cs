@@ -23,7 +23,8 @@ namespace NicoDeWet.WebTime
             // from Startup.Configure as follows.
             // Note UseDefaultFiles must be called before UseStaticFiles to serve the default file. UseDefaultFiles is a URL re-writer 
             // that doesn’t actually serve the file. You must enable the static file middleware (UseStaticFiles) to serve the file.
-            app.UseDefaultFiles();
+            // app.UseDefaultFiles();
+
             // For the wwwroot folder
             app.UseStaticFiles();
 
