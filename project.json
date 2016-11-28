@@ -56,7 +56,8 @@
     "include": [
       "wwwroot",
       "web.config",
-      "Dockerfile"
+      "Dockerfile",
+      "Views"
     ]
   },
 

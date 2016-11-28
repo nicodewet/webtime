@@ -11,5 +11,5 @@ dotnet publish
 # Docker build section
 # Note the Dockerfile is copied to the below directory because it is
 # included as a file in the publishOptions include section
-cd bin/Debug/netcoreapp1.0/publish
+cd bin/Debug/netcoreapp1.1/publish
 docker build -t nicodewet/timeapp .
