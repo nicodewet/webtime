@@ -17,7 +17,9 @@ node {
     git url: "https://github.com/nicodewet/webtime.git"
 
     stage ('Maven compile (dotnet restore and publish)') {
+        // Microsoft .NET Core Shared Framework Host assertion
         sh dotnet | grep "Version  : 1.1.0"
+        // The above assertion should be build into the below, but it's not at present.
         sh 'mvn compile'
     }
 
