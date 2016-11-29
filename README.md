@@ -2,6 +2,8 @@
 
 https://travis-ci.org/nicodewet/webtime.svg?branch=master
 
+[![Build Status](https://travis-ci.org/nicodewet/webtime.png?branch=master)](https://travis-ci.org/nicodewet/webtime)
+
 An ASP.NET Core web application.
 
 * [SNAPSHOT Pipeline](https://ci.makaro.io/job/dotnet-webtime-SNAPSHOT-pipeline/) (note documentation publication is a pipeline step called **Maven site generate and deploy**). 
