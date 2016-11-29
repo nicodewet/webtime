@@ -1,5 +1,7 @@
 # Onboarding
 
+Demo.
+
 This page serves as background information for new members (developers with commit privileges who will directly contribute to the project in one way or another).
 
 ## Principles and Practices
