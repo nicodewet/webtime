@@ -1,7 +1,5 @@
 # WebTime
 
-https://travis-ci.org/nicodewet/webtime.svg?branch=master
-
 [![Build Status](https://travis-ci.org/nicodewet/webtime.png?branch=master)](https://travis-ci.org/nicodewet/webtime)
 
 An ASP.NET Core web application.
