@@ -3,7 +3,7 @@
 node {
 
     // Recursively delete the current directory from the workspace
-    // deleteDir()
+    deleteDir()
 
     /**
     * The below assumes that you have named your Maven installation as M3 in Jenkins.
@@ -31,7 +31,6 @@ node {
     }
 
     stage ('Maven local docker image build and tag') {
-        sh 'ls bin && rm -rf bin'
         sh 'mvn clean package'
     }
 
