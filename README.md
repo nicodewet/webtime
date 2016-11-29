@@ -13,15 +13,15 @@ If you are new to this project please refer to the [onboarding](https://repo.mak
 
 ### :one: .NET Core and Visual Studio Code on Mac
 https://code.visualstudio.com/docs/runtimes/dotnet
-### GitHub
+### :two: GitHub
 https://github.com/nicodewet/webtime
-### Travis CI
+### :three: Travis CI
 https://travis-ci.org/nicodewet/webtime
-### Jenkins 2 package on Ubuntu 16.04.1 LTS
+### :four: Jenkins 2 package on Ubuntu 16.04.1 LTS
 https://ci.makaro.io
-### Nexus 3 container on Ubuntu 16.04.1 LTS
+### :five: Nexus 3 container on Ubuntu 16.04.1 LTS
 https://repo.makaro.io
-### Docker Hub
+### :six: Docker Hub
 https://hub.docker.com/r/nicodewet/timeapp/
-### Show n Tell on Ubuntu 16.04.1 LTS
+### :seven: Show n Tell on Ubuntu 16.04.1 LTS
 http://time.makaro.io
