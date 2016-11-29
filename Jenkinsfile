@@ -34,6 +34,11 @@ node {
         sh 'mvn clean package'
     }
 
+    stage ('Local docker image smoke test') {
+        sh 'chmod u+x local-run-n-smoke-test.sh'
+        sh './local-run-n-smoke-test.sh'
+    }
+
     stage ('Maven docker hub image push') {
         sh 'mvn deploy'
     }
