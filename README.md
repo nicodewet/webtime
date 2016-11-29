@@ -11,7 +11,7 @@ If you are new to this project please refer to the [onboarding](https://repo.mak
 
 ## Primary Delivery Pipeline Components
 
-### .NET Core and Visual Studio Code on Mac
+### :one: .NET Core and Visual Studio Code on Mac
 https://code.visualstudio.com/docs/runtimes/dotnet
 ### GitHub
 https://github.com/nicodewet/webtime
