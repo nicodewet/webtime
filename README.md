@@ -14,7 +14,7 @@ If you are new to this project please refer to the [onboarding](https://repo.mak
 ### .NET Core and Visual Studio Code on Mac
 https://code.visualstudio.com/docs/runtimes/dotnet
 ### GitHub
-https://github.com/nicodewet/webtime)
+https://github.com/nicodewet/webtime
 ### Travis CI
 https://travis-ci.org/nicodewet/webtime
 ### Jenkins 2 package on Ubuntu 16.04.1 LTS
