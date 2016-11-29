@@ -11,7 +11,7 @@ If you are new to this project please refer to the [onboarding](https://repo.mak
 
 ## Primary Delivery Pipeline Components
 
-### :one: .NET Core and Visual Studio Code on Mac
+### :one: .NET Core, Visual Studio Code and Docker Engine on Mac
 https://code.visualstudio.com/docs/runtimes/dotnet
 ### :two: GitHub
 https://github.com/nicodewet/webtime
@@ -23,5 +23,5 @@ https://ci.makaro.io
 https://repo.makaro.io
 ### :six: Docker Hub
 https://hub.docker.com/r/nicodewet/timeapp/
-### :seven: Show n Tell on Ubuntu 16.04.1 LTS
+### :seven: Show n Tell container on Ubuntu 16.04.1 LTS
 http://time.makaro.io
