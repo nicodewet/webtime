@@ -2,6 +2,8 @@
 
 This page serves as background information for new members (developers with commit privileges who will directly contribute to the project in one way or another).
 
+Blah.
+
 ## Principles and Practices
 
 * The entire pipeline, from developer machine to production uses *nix operating systems.
